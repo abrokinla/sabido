@@ -6,7 +6,8 @@
     "dev": "next dev",
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
     "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
-    "build": "next build && next export",
+    "build": "next build && next-on-pages",
+    "deploy": "wrangler pages deploy .vercel/output/static --project-name=sabido",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
@@ -58,8 +59,10 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "genkit-cli": "^1.8.0",
+    "next-on-pages": "^0.1.6",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.20.0"
   }
 }
