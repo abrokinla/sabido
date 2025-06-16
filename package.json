@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
     "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
-    "build": "next build && npm run pages:build",
-    "pages:build": "npx @cloudflare/next-on-pages --experimental-minify",
-    "deploy": "wrangler pages deploy .vercel/output/static --project-name=sabido",
+    "dev": "next dev",
+    "build": "npx @cloudflare/next-on-pages --experimental-minify",
+    "deploy": "wrangler pages deploy .output --project-name=sabido",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
