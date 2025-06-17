@@ -1,4 +1,5 @@
 import type {NextConfig} from 'next';
+
 const nextConfig: NextConfig = {
   trailingSlash: true,
   typescript: {
@@ -16,6 +17,10 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+    unoptimized: true,
+  },
+  experimental: {
+    runtime: 'edge',
   },
 };
 

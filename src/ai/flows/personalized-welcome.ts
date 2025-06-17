@@ -7,7 +7,7 @@
  * - PersonalizedWelcomeInput - The input type for the generatePersonalizedWelcomeMessage function.
  * - PersonalizedWelcomeOutput - The return type for the generatePersonalizedWelcomeMessage function.
  */
-
+export const runtime = 'edge';
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 

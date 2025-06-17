@@ -6,7 +6,7 @@
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
     "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
     "dev": "next dev",
-    "build": "npx @cloudflare/next-on-pages --experimental-minify",
+    "build": "npx @cloudflare/next-on-pages",
     "deploy": "wrangler pages deploy .output --project-name=sabido",
     "start": "next start",
     "lint": "next lint",
