@@ -6,8 +6,10 @@
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
     "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
     "dev": "next dev",
-    "build": "npx @cloudflare/next-on-pages",
-    "deploy": "wrangler pages deploy .output --project-name=sabido",
+    "build:next": "next build",
+    "build:cloudflare": "npx @cloudflare/next-on-pages",
+    "build": "npm run build:next",
+    "deploy": "wrangler pages deploy .vercel/output/static --project-name=sabido",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"

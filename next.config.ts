@@ -19,9 +19,7 @@ const nextConfig: NextConfig = {
     ],
     unoptimized: true,
   },
-  experimental: {
-    runtime: 'edge',
-  },
+ 
 };
 
 export default nextConfig;
